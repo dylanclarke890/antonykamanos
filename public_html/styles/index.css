@@ -93,7 +93,7 @@
   .getext {
     font-family: "Mogra", cursive;
     float: left;
-    text-outline: black;
+    /* text-outline: black; */
     color: green;
     text-shadow: black 2px 2px 2px;
   }
@@ -226,7 +226,7 @@
     padding-top: 80px;
     padding-left: 0;
     padding-right: 0;
-    background: url(images/introbg5.png) no-repeat bottom left;
+    background: url(images/intro-bg.png) no-repeat bottom left;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -240,7 +240,7 @@
 
   #about {
     padding-top: 80px;
-    background: url(images/aboutbg1.jpg) no-repeat bottom left;
+    background: url(images/about-bg.jpg) no-repeat bottom left;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -278,7 +278,7 @@
   }
 
   #goodeats {
-    background: url(images/veg2.jpg) no-repeat bottom left;
+    background: url(images/tomatoes.jpg) no-repeat bottom left;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -292,7 +292,7 @@
   .getext {
     font-family: "Mogra", cursive;
     font-size: 26px;
-    text-outline: black;
+    /* text-outline: black; */
     color: green;
     text-shadow: black 2px 2px 2px;
   }
