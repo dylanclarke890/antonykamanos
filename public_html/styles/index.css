@@ -1,0 +1,389 @@
+@media only screen and (max-width: 699px) {
+  .navbar {
+    background-color: rgba(255, 255, 255, 0.8);
+    clear: both;
+  }
+  #togglebutt {
+    height: 40px;
+    position: relative;
+    left: -100px;
+  }
+  .cthru {
+    background-color: transparent;
+  }
+  .changeOp {
+    background-color: rgba(255, 255, 255, 0.8);
+  }
+  .nav-item {
+    font-family: "Barrio", cursive;
+    letter-spacing: 2px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    margin-top: 0;
+    text-shadow: #333 1.7px 1.7px 1.7px;
+  }
+
+  .nav-link {
+    text-align: center;
+    color: white;
+  }
+
+  .navbar .nav > li > a:focus {
+    background-color: transparent;
+    color: purple;
+  }
+  .navbar .nav > li > a:hover {
+    background-color: transparent;
+    color: green;
+    font-size: 40px;
+  }
+
+  ul.nav li.active a {
+    color: purple;
+  }
+
+  .navbar .nav > li.current-menu-item > a {
+    color: purple;
+  }
+
+  #intro {
+    float: left;
+    clear: both;
+  }
+
+  #intro img {
+    position: relative;
+    float: left;
+    clear: both;
+    width: 300px;
+  }
+
+  #about {
+    float: left;
+    clear: both;
+    width: 300px;
+  }
+  .float {
+    float: left;
+  }
+  .fit {
+    clear: both;
+  }
+  .center {
+    text-align: center;
+  }
+  .abouttext {
+    position: relative;
+    float: left;
+    font-family: "Josefin Sans", sans-serif;
+  }
+  .aboutlist {
+    position: relative;
+    left: 25%;
+    width: 400px;
+  }
+  .aboutpic {
+    position: relative;
+    float: left;
+  }
+  .gecontent {
+    float: left;
+  }
+  .getext {
+    font-family: "Mogra", cursive;
+    float: left;
+    text-outline: black;
+    color: green;
+    text-shadow: black 2px 2px 2px;
+  }
+  .foodchart {
+    float: left;
+  }
+  .acid {
+    position: relative;
+    float: left;
+  }
+  #acidimg {
+    height: 300px;
+    float: left;
+    width: 300px;
+  }
+  .base {
+    position: relative;
+    float: left;
+  }
+  #baseimg {
+    height: 300px;
+    float: left;
+  }
+  h3 {
+    float: left;
+    text-align: center;
+    padding: 0;
+    position: relative;
+  }
+
+  video {
+    width: 400px;
+
+    object-fit: fill;
+  }
+  #waitcontent {
+    position: relative;
+    padding-top: 10px;
+    text-align: center;
+    color: black;
+    text-shadow: green 2px 2px 2px;
+    font-family: "Mogra", cursive;
+    font-size: 21px;
+  }
+  #testilink {
+    text-shadow: white 1px 1px 1px;
+  }
+  .signature {
+    position: relative;
+    text-align: center;
+  }
+
+  .icon {
+    height: 30px;
+  }
+}
+@media only screen and (min-width: 700px) {
+  .nav {
+    position: relative;
+    width: 100vw;
+  }
+  .nav-item {
+    column-width: 140px;
+    font-size: 19px;
+    font-weight: 500;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: 0;
+  }
+  .cthru {
+    background-color: transparent;
+  }
+  .changeOp {
+    background-color: rgba(255, 255, 255, 0.8);
+  }
+
+  body {
+    padding: 0;
+    margin: 0;
+    position: relative;
+    overflow-y: scroll;
+    height: 100%;
+    background-color: rgba(6, 149, 100, 0.8);
+  }
+  #menu {
+    background-color: pink;
+  }
+
+  .navbar {
+    margin: 0 auto;
+  }
+
+  .nav-item {
+    font-size: 26px;
+    font-weight: 400;
+    font-family: "Barrio", cursive;
+    letter-spacing: 2px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    margin-top: 0;
+    text-shadow: #333 1.7px 1.7px 1.7px;
+  }
+
+  .nav-link {
+    text-align: center;
+    color: white;
+  }
+
+  .navbar .nav > li > a:focus {
+    background-color: transparent;
+    color: purple;
+  }
+  .navbar .nav > li > a:hover {
+    background-color: transparent;
+    color: green;
+    font-size: 40px;
+  }
+
+  ul.nav li.active a {
+    color: purple;
+  }
+
+  .navbar .nav > li.current-menu-item > a {
+    color: purple;
+  }
+
+  #intro {
+    margin: 0;
+    padding-top: 80px;
+    padding-left: 0;
+    padding-right: 0;
+    background: url(images/introbg5.png) no-repeat bottom left;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-size: 100% 100%;
+  }
+
+  #intro img {
+    width: 100%;
+  }
+
+  #about {
+    padding-top: 80px;
+    background: url(images/aboutbg1.jpg) no-repeat bottom left;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-size: 100% 100%;
+  }
+  .float {
+    float: left;
+  }
+  .fit {
+    clear: both;
+  }
+  .center {
+    text-align: center;
+  }
+  .abouttext {
+    position: relative;
+    top: -480px;
+    left: 30%;
+    width: 75%;
+
+    font-size: 22px;
+    font-family: "Josefin Sans", sans-serif;
+    letter-spacing: 1px;
+    font-weight: 400;
+  }
+  .aboutlist {
+    position: relative;
+    left: 25%;
+    width: 300px;
+  }
+  .aboutpic {
+    position: relative;
+    top: 10px;
+  }
+
+  #goodeats {
+    background: url(images/veg2.jpg) no-repeat bottom left;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-size: 100% 100%;
+  }
+  .gecontent {
+    position: relative;
+    top: -340px;
+  }
+  .getext {
+    font-family: "Mogra", cursive;
+    font-size: 26px;
+    text-outline: black;
+    color: green;
+    text-shadow: black 2px 2px 2px;
+  }
+  .foodchart {
+    float: left;
+    padding: 20px;
+  }
+  .acid {
+    position: relative;
+    left: 8%;
+
+    padding-top: 60px;
+  }
+  .base {
+    position: relative;
+    left: 10%;
+    top: -10%;
+
+    padding-top: 0;
+  }
+  #baseimg {
+    height: 510px;
+  }
+  h3 {
+    text-align: center;
+    padding: 0;
+    position: relative;
+    top: -10%;
+  }
+
+  #vids {
+    position: relative;
+    top: -170px;
+    left: 25%;
+    width: auto;
+  }
+  video {
+    width: 640px;
+    height: 100%;
+    object-fit: fill;
+  }
+
+  #social {
+    background: url(images/zen-garden.jpg) no-repeat bottom left;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 90%;
+    min-height: 90%;
+  }
+  #wait {
+    background: url(images/dock.jpg) no-repeat bottom left;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+  #waitcontent {
+    position: relative;
+    left: 15px;
+    border-radius: 15px;
+    padding-top: 10px;
+    text-align: center;
+    width: 51%;
+    line-height: 155%;
+    color: white;
+    text-shadow: green 2px 2px 2px;
+    font-family: "Mogra", cursive;
+    font-size: 21px;
+  }
+  #testilink {
+    text-shadow: white 1px 1px 1px;
+  }
+  .signature {
+    position: relative;
+    text-align: center;
+  }
+
+  .icon {
+    height: 30px;
+  }
+
+  html,
+  body,
+  #intro,
+  #about,
+  #goodeats,
+  #social,
+  #wait {
+    height: 100%;
+  }
+}
