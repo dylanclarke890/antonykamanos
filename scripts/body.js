@@ -7,13 +7,13 @@ jQuery(function ($) {
         $("#menu").hide();
       }
       $("#menubutt").show();
-      $("#logo").attr("src", "images/logo_small.png");
+      $("#logo").attr("src", "images/logo-mobile.png");
     } else if ($(this).width() >= 768) {
       if (!open) {
         $("#menu").show();
       }
       $("#menubutt").hide();
-      $("#logo").attr("src", "images/logo_big_def.png");
+      $("#logo").attr("src", "images/logo-web.png");
     }
   }
 
