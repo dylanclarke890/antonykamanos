@@ -1,3 +1,27 @@
+nav {
+  margin-top: 2vh;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+nav ul {
+  display: flex;
+  list-style-type: none;
+  justify-content: space-evenly;
+}
+
+nav ul li a {
+  font-size: 26px;
+  font-family: "Barrio", cursive;
+  letter-spacing: 2px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 10px;
+  margin-top: 0;
+  text-shadow: #333 1.7px 1.7px 1.7px;
+}
+
 @media only screen and (max-width: 699px) {
   .navbar {
     background-color: rgba(255, 255, 255, 0.8);
@@ -177,9 +201,6 @@
     overflow-y: scroll;
     height: 100%;
     background-color: rgba(6, 149, 100, 0.8);
-  }
-  #menu {
-    background-color: pink;
   }
 
   .navbar {

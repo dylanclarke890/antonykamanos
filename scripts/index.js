@@ -1,46 +1,52 @@
-window.addEventListener(
-  "scroll",
-  function () {
-    if (window.scrollY > $("#intro").offset().top && window.scrollY < $("#about").offset().top) {
-      $("nav").removeClass("cthru");
-      $("nav").addClass("changeOp");
-    } else if (
-      window.scrollY > $("#geanchor1").offset().top &&
-      window.scrollY < $("#geanchor2").offset().top
+document.addEventListener("DOMContentLoaded", addEvents);
+
+function addEvents() {
+  const intro = document.getElementById("intro"),
+    about = document.getElementById("about"),
+    geAnchor1 = document.getElementById("geanchor1"),
+    geAnchor2 = document.getElementById("geanchor2"),
+    nav = document.querySelector("nav");
+  const transparentClass = "cthru",
+    changeOp = "changeOp";
+
+  window.addEventListener("scroll", () => {
+    const y = window.scrollY;
+    if (
+      (y > intro.offsetTop && y < about.offsetTop) ||
+      (y > geAnchor1.offsetTop && y < geAnchor2.offsetTop)
     ) {
-      $("nav").removeClass("cthru");
-      $("nav").addClass("changeOp");
+      nav.classList.remove(transparentClass);
+      nav.classList.add(changeOp);
     } else {
-      $("nav").removeClass("changeOp");
-      $("nav").addClass("cthru");
+      nav.classList.remove(changeOp);
+      nav.classList.add(transparentClass);
     }
-  },
-  false
-);
+  });
 
-$(document).ready(function () {
-  // navigation click actions
-  $(".scroll-link").on("click", function (event) {
-    event.preventDefault();
-    var sectionID = $(this).attr("data-id");
-    scrollTo(sectionID);
-  });
-  // scroll to top action
-  $(".scroll-top").on("click", function (event) {
-    event.preventDefault();
-    $("html, body").animate({ scrollTop: 0 }, "slow");
-  });
-  // mobile nav toggle
-  $("#nav-toggle").on("click", function (event) {
-    event.preventDefault();
-    $("#main-nav").toggleClass("open");
-  });
-});
+  const scrollLinks = document.getElementsByClassName("scroll-link");
+  for (let link of scrollLinks) {
+    link.addEventListener("click", (e) => {
+      e.preventDefault();
+      scrollToElement(link.getAttribute("data-id"));
+    });
+  }
 
-function scrollTo(id) {
-  console.log("HIT");
+  const scrollTopActions = document.getElementsByClassName("scroll-top");
+  for (let action of scrollTopActions) {
+    action.addEventListener("click", (e) => {
+      e.preventDefault();
+      scrollTo(0);
+    });
+  }
+}
+
+function scrollToElement(id) {
   const target = document.getElementById(id);
   const y = target.getBoundingClientRect().top + window.scrollY;
+  scrollTo(y);
+}
+
+function scrollTo(y) {
   window.scroll({
     top: y,
     behavior: "smooth",
