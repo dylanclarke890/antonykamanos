@@ -226,7 +226,7 @@
     padding-top: 80px;
     padding-left: 0;
     padding-right: 0;
-    background: url(images/intro-bg.png) no-repeat bottom left;
+    background: url(../images/intro-bg.png) no-repeat bottom left;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -240,7 +240,7 @@
 
   #about {
     padding-top: 80px;
-    background: url(images/about-bg.jpg) no-repeat bottom left;
+    background: url(../images/about-bg.jpg) no-repeat bottom left;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -278,7 +278,7 @@
   }
 
   #goodeats {
-    background: url(images/tomatoes.jpg) no-repeat bottom left;
+    background: url(../images/tomatoes.jpg) no-repeat bottom left;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -336,7 +336,7 @@
   }
 
   #social {
-    background: url(images/zen-garden.jpg) no-repeat bottom left;
+    background: url(../images/zen-garden.jpg) no-repeat bottom left;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -346,7 +346,7 @@
     min-height: 90%;
   }
   #wait {
-    background: url(images/dock.jpg) no-repeat bottom left;
+    background: url(../images/dock.jpg) no-repeat bottom left;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;

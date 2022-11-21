@@ -149,7 +149,7 @@ body {
   .menuli:hover {
     border: transparent solid 0.2em;
     background-color: rgba(230, 230, 250, 0.75);
-    background-image: url(images/silver1.png);
+    background-image: url(../images/silver1.png);
     background-repeat: no-repeat;
     background-size: contain;
     background-position: top right;
@@ -181,7 +181,7 @@ body {
     margin: 0 auto;
     width: 80vw;
     padding: 7em 5em 5em 5em;
-    background-image: url(images/paperbgbl2.png);
+    background-image: url(../images/paperbgbl2.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
@@ -279,7 +279,7 @@ body {
   }
 
   #menubutt-inner {
-    background: transparent url(images/gold5.png) no-repeat 0 0;
+    background: transparent url(../images/gold5.png) no-repeat 0 0;
     background-size: contain;
     width: 10.4em;
     height: 6.3em;
