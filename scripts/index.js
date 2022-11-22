@@ -11,10 +11,7 @@ function addEvents() {
 
   window.addEventListener("scroll", () => {
     const y = window.scrollY;
-    if (
-      (y > intro.offsetTop && y < about.offsetTop) ||
-      (y > geAnchor1.offsetTop && y < geAnchor2.offsetTop)
-    ) {
+    if (y > intro.offsetTop && y < about.offsetTop) {
       nav.classList.remove(transparentClass);
       nav.classList.add(changeOp);
     } else {

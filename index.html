@@ -4,16 +4,13 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <link
-      rel="stylesheet"
-      href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
-    <link
       href="https://fonts.googleapis.com/css?family=Barrio|Josefin+Sans|Metamorphous|Mogra|"
       rel="stylesheet" />
     <title>AnthonyKamanos.com</title>
     <link rel="stylesheet" href="styles/index.css" />
   </head>
-  <body data-spy="scroll" data-offset="50" data-target=".navbar">
-    <nav>
+  <body>
+    <nav id="navbar">
       <ul>
         <li>
           <a class="scroll-link" data-id="intro" href="#intro">HOME</a>
@@ -35,62 +32,57 @@
         </li>
       </ul>
     </nav>
-    <div id="intro">
-      <img src="images/antony-kamanos.png" />
+    <div id="intro" class="section">
+      <div class="gap"></div>
+      <img id="intro-pic" src="images/antony-kamanos.png" />
     </div>
-    <div id="about" class="container-fluid">
-      <div class="container">
-        <img class="float aboutpic" src="images/antony.png" />
-        <div class="abouttext float fit">
-          <h2 class="center">About</h2>
-          <p>
-            The goal of TYSO yoga is to harness the natural energy of the universe, or Ch'i;
-            cultivating this primal life-force within the body, as did the ancient alchemists,
-            through 3 areas:
-          </p>
-          <div class="aboutlist fit">
-            <ol>
-              <li>Health</li>
-              <li>Developing mental &amp; physical power</li>
-              <li>Spiritual growth</li>
-            </ol>
-          </div>
-          <div class="fit">
-            <p>
-              The TYSO Yoga method was designed specifically with a focus on longevity and internal
-              endurance.
-            </p>
-            <p class="center">Live YOUR Chi</p>
-            <p class="center">-Anthony</p>
-          </div>
+    <div id="about" class="section">
+      <div>
+        <img src="images/antony.png" />
+      </div>
+      <div id="about-content">
+        <h2>About</h2>
+        <p>
+          The goal of TYSO yoga is to harness the natural energy of the universe, or Ch'i;
+          cultivating this primal life-force within the body, as did the ancient alchemists, through
+          3 areas:
+        </p>
+        <div id="three-areas">
+          <ol>
+            <li>Health</li>
+            <li>Developing mental &amp; physical power</li>
+            <li>Spiritual growth</li>
+          </ol>
         </div>
+        <p>
+          The TYSO Yoga method was designed specifically with a focus on longevity and internal
+          endurance.
+        </p>
+        <p class="text-center">Live YOUR Chi</p>
+        <p class="text-center">-Anthony</p>
       </div>
     </div>
-    <div id="goodeats" class="container-fluid">
-      <div class="container gecontent fit">
-        <div id="geanchor1"></div>
-        <h3 class="fit getext">
-          Understanding how to combine &amp; sequence food for energy is a key pillar of health.
-        </h3>
-        <div class="foodchart acid">
-          <img id="acidimg" src="images/food-chart.png" />
-        </div>
-        <div class="foodchart base">
-          <img id="baseimg" src="images/acid-reflux.jpg" />
-          <div id="geanchor2"></div>
-        </div>
+    <div id="goodeats" class="section">
+      <h3>
+        Understanding how to combine &amp; sequence food for energy is a key pillar of health.
+      </h3>
+      <div class="foodchart acid">
+        <img id="acidimg" src="images/food-chart.png" />
+      </div>
+      <div class="foodchart base">
+        <img id="baseimg" src="images/acid-reflux.jpg" />
       </div>
     </div>
-    <div id="social" class="container-fluid">
-      <div id="vids" class="container fit float">
+    <div id="social" class="section">
+      <div id="vids">
         <video controls poster="images/poster.png">
           <source src="videos/tyso-vid.mp4" type="video/mp4" />
         </video>
       </div>
-      <div id="socanchor" class="container-fluid fit"></div>
+      <div id="socanchor"></div>
     </div>
-    <div id="wait" class="container-fluid">
-      <div class="container fit" id="waitcontent">
+    <div id="wait" class="section">
+      <div id="waitcontent">
         <p>
           <img class="icon" src="images/symbolw.png" /> TYSO yoga is, for me, the most<br />
           grounded of the yoga disciplines.
@@ -117,11 +109,9 @@
         </p>
       </div>
     </div>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
-    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
     <script src="scripts/index.js" type="text/javascript"></script>
     <script
       type="text/javascript"
-      src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-58c7313764cdf860"></script>
+      src="https://s7.addthis.com/js/300/addthis_widget.js#pubid=ra-58c7313764cdf860"></script>
   </body>
 </html>

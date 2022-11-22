@@ -1,17 +1,27 @@
-nav {
-  margin-top: 2vh;
+.text-center {
+  text-align: center;
+}
+
+.mx-auto {
+  margin-inline: auto;
+}
+
+#navbar {
   position: fixed;
   top: 0;
   width: 100%;
+  z-index: 1000;
 }
 
-nav ul {
+#navbar ul {
   display: flex;
   list-style-type: none;
   justify-content: space-evenly;
+  margin-inline: auto;
+  width: 970px;
 }
 
-nav ul li a {
+#navbar ul li a {
   font-size: 26px;
   font-family: "Barrio", cursive;
   letter-spacing: 2px;
@@ -20,9 +30,98 @@ nav ul li a {
   padding-top: 10px;
   margin-top: 0;
   text-shadow: #333 1.7px 1.7px 1.7px;
+  text-decoration: none;
+  color: white;
 }
 
-@media only screen and (max-width: 699px) {
+#navbar ul li a:hover {
+  color: green;
+  font-size: 40px;
+}
+
+.gap {
+  height: 5em;
+}
+
+#intro {
+  background: url(../images/intro-bg.png) no-repeat bottom left;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-size: 100% 100%;
+}
+
+#intro-pic {
+  width: 100%;
+}
+
+#about {
+  padding-top: 5em;
+  background: url(../images/about-bg.jpg) no-repeat bottom left;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-size: 100% 100%;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  font-size: 22px;
+  font-family: "Josefin Sans", sans-serif;
+  letter-spacing: 1px;
+  font-weight: 400;
+}
+
+#about img {
+  float: right;
+  margin-right: 30px;
+  margin-top: 20px;
+}
+
+#about-content {
+  padding: 2em;
+}
+
+#about-content > p:first-of-type {
+  margin: 0;
+}
+
+#three-areas {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cthru {
+  background-color: transparent;
+}
+.changeOp {
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  background-color: rgba(6, 149, 100, 0.8);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: inherit;
+  font-weight: 500;
+  line-height: 1.1;
+  color: inherit;
+}
+
+.section {
+  height: 100vh;
+}
+
+/* @media only screen and (max-width: 699px) {
   .navbar {
     background-color: rgba(255, 255, 255, 0.8);
     clear: both;
@@ -32,12 +131,7 @@ nav ul li a {
     position: relative;
     left: -100px;
   }
-  .cthru {
-    background-color: transparent;
-  }
-  .changeOp {
-    background-color: rgba(255, 255, 255, 0.8);
-  }
+
   .nav-item {
     font-family: "Barrio", cursive;
     letter-spacing: 2px;
@@ -107,17 +201,13 @@ nav ul li a {
     left: 25%;
     width: 400px;
   }
-  .aboutpic {
-    position: relative;
-    float: left;
-  }
   .gecontent {
     float: left;
   }
   .getext {
     font-family: "Mogra", cursive;
     float: left;
-    /* text-outline: black; */
+    /* text-outline: black;
     color: green;
     text-shadow: black 2px 2px 2px;
   }
@@ -187,21 +277,6 @@ nav ul li a {
     padding-right: 10px;
     margin-top: 0;
   }
-  .cthru {
-    background-color: transparent;
-  }
-  .changeOp {
-    background-color: rgba(255, 255, 255, 0.8);
-  }
-
-  body {
-    padding: 0;
-    margin: 0;
-    position: relative;
-    overflow-y: scroll;
-    height: 100%;
-    background-color: rgba(6, 149, 100, 0.8);
-  }
 
   .navbar {
     margin: 0 auto;
@@ -258,16 +333,6 @@ nav ul li a {
   #intro img {
     width: 100%;
   }
-
-  #about {
-    padding-top: 80px;
-    background: url(../images/about-bg.jpg) no-repeat bottom left;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    background-size: 100% 100%;
-  }
   .float {
     float: left;
   }
@@ -293,10 +358,6 @@ nav ul li a {
     left: 25%;
     width: 300px;
   }
-  .aboutpic {
-    position: relative;
-    top: 10px;
-  }
 
   #goodeats {
     background: url(../images/tomatoes.jpg) no-repeat bottom left;
@@ -313,7 +374,7 @@ nav ul li a {
   .getext {
     font-family: "Mogra", cursive;
     font-size: 26px;
-    /* text-outline: black; */
+    /* text-outline: black;
     color: green;
     text-shadow: black 2px 2px 2px;
   }
@@ -407,4 +468,4 @@ nav ul li a {
   #wait {
     height: 100%;
   }
-}
+} */
