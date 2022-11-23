@@ -131,6 +131,16 @@
   height: 510px;
 }
 
+#social {
+  display: grid;
+  place-items: center;
+  background: url(../images/zen-garden.jpg) no-repeat bottom left;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: 100% 100%;
+}
+
 .changeOp {
   background-color: rgba(255, 255, 255, 0.8);
 }
