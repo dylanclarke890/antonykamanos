@@ -69,6 +69,10 @@ h6 {
   color: white;
 }
 
+#navbar ul li a.active {
+  color: purple;
+}
+
 #navbar ul li a:hover {
   color: green;
   display: block;
