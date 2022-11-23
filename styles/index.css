@@ -1,3 +1,27 @@
+/* GENERAL */
+
+body {
+  padding: 0;
+  margin: 0;
+  background-color: rgba(6, 149, 100, 0.8);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: inherit;
+  font-weight: 500;
+  line-height: 1.1;
+  color: inherit;
+}
+
+.section {
+  height: 100vh;
+}
+
 .text-center {
   text-align: center;
 }
@@ -5,6 +29,18 @@
 .mx-auto {
   margin-inline: auto;
 }
+
+.gap {
+  height: 5em;
+}
+
+.changeOp {
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+/* END GENERAL */
+
+/* NAVBAR */
 
 #navbar {
   position: fixed;
@@ -40,9 +76,11 @@
   transform-origin: bottom center;
 }
 
-.gap {
-  height: 5em;
-}
+/* END NAVBAR */
+
+/* SECTIONS */
+
+/* INTRO */
 
 #intro {
   background: url(../images/intro-bg.png) no-repeat bottom left;
@@ -56,6 +94,10 @@
 #intro-pic {
   width: 100%;
 }
+
+/* END INTRO */
+
+/* ABOUT */
 
 #about {
   padding-top: 5em;
@@ -92,6 +134,10 @@
   flex-direction: column;
   align-items: center;
 }
+
+/* END ABOUT */
+
+/* GOOD EATS */
 
 #goodeats {
   background: url(../images/tomatoes.jpg) no-repeat bottom left;
@@ -131,6 +177,10 @@
   height: 510px;
 }
 
+/* END GOOD EATS */
+
+/* SOCIAL */
+
 #social {
   display: grid;
   place-items: center;
@@ -141,31 +191,43 @@
   background-size: 100% 100%;
 }
 
-.changeOp {
-  background-color: rgba(255, 255, 255, 0.8);
+/* END SOCIAL */
+
+/* TESTIMONIALS */
+
+#testimonials {
+  color: white;
+  text-shadow: green 2px 2px 2px;
+  font-family: "Mogra", cursive;
+  font-size: 21px;
+  text-align: center;
+  line-height: 155%;
+  background: url(../images/dock.jpg) no-repeat bottom left;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
-body {
+#testimonials p {
   padding: 0;
   margin: 0;
-  background-color: rgba(6, 149, 100, 0.8);
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: inherit;
-  font-weight: 500;
-  line-height: 1.1;
-  color: inherit;
+#read-more {
+  color: #337ab7;
+  text-shadow: white 1px 1px 1px;
 }
 
-.section {
-  height: 100vh;
+.icon {
+  height: 30px;
+  position: relative;
+  top: 5px;
 }
+
+/* END TESTIMONIALS */
+
+/* END SECTIONS */
 
 /* @media only screen and (max-width: 699px) {
   .navbar {
