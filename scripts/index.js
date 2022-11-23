@@ -3,21 +3,13 @@ document.addEventListener("DOMContentLoaded", addEvents);
 function addEvents() {
   const intro = document.getElementById("intro"),
     about = document.getElementById("about"),
-    geAnchor1 = document.getElementById("geanchor1"),
-    geAnchor2 = document.getElementById("geanchor2"),
     nav = document.querySelector("nav");
-  const transparentClass = "cthru",
-    changeOp = "changeOp";
+  const changeOp = "changeOp";
 
   window.addEventListener("scroll", () => {
     const y = window.scrollY;
-    if (y > intro.offsetTop && y < about.offsetTop) {
-      nav.classList.remove(transparentClass);
-      nav.classList.add(changeOp);
-    } else {
-      nav.classList.remove(changeOp);
-      nav.classList.add(transparentClass);
-    }
+    if (y > intro.offsetTop && y < about.offsetTop) nav.classList.add(changeOp);
+    else nav.classList.remove(changeOp);
   });
 
   const scrollLinks = document.getElementsByClassName("scroll-link");
