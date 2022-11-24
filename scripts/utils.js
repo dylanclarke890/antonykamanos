@@ -1,6 +1,7 @@
 function scrollToElement(id) {
   if (!id) return;
   const target = document.getElementById(id);
+  if (!target) return;
   const y = target.getBoundingClientRect().top + window.scrollY;
   scrollTo(y);
 }
