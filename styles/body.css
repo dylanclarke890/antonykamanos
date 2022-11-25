@@ -1,3 +1,28 @@
+/* GENERAL */
+
+body {
+  background: linear-gradient(
+    to right,
+    rgba(230, 230, 250, 0.7) 0%,
+    rgba(135, 206, 250, 0.5) 5%,
+    rgba(30, 144, 255, 0.7) 30%,
+    rgba(50, 177, 208, 0.6) 60%,
+    rgba(0, 0, 205, 0.5) 80%,
+    rgba(0, 0, 139, 0.7) 90%,
+    rgba(75, 0, 130, 0.9) 100%
+  );
+}
+
+/* END GENERAL */
+
+/* NAVBAR */
+
+#logo {
+  vertical-align: middle;
+  padding-top: 1em;
+  padding-left: 1em;
+}
+
 #navbar {
   display: flex;
   background-color: rgba(30, 144, 255, 0.2);
@@ -46,6 +71,12 @@
   color: rgba(30, 144, 255, 1);
 }
 
+/* CONTENT */
+/* END CONTENT */
+
+/* END NAVBAR */
+
+/*
 .btt {
   padding: 1.2em;
   font-weight: bold;
@@ -83,7 +114,7 @@ body {
 #logobutt-wrapper {
   display: table;
   width: 100vw;
-  margin: 0 auto; /* 6/16 = 0.375em; */
+  margin: 0 auto; /* 6/16 = 0.375em;
 }
 
 #logobutt {
@@ -97,10 +128,6 @@ body {
 .repobutt {
   position: relative;
   left: 30vw !important;
-}
-
-#logo {
-  vertical-align: middle;
 }
 
 .wrapper {
@@ -142,7 +169,7 @@ body {
       rgba(0, 0, 205, 0.5) 80%,
       rgba(0, 0, 139, 0.7) 90%,
       rgba(75, 0, 130, 0.9) 100%
-    ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ 
   }
 
   #banner-wrapper {
@@ -152,13 +179,6 @@ body {
   #logobutt-wrapper {
     position: absolute;
     background-color: transparent;
-  }
-
-  #logo {
-    padding-top: 2em;
-    padding-left: 2em;
-    position: relative;
-    z-index: 5001;
   }
 
   #menu {
@@ -274,12 +294,7 @@ body {
       rgba(8, 156, 212, 0.3) 50%,
       rgba(8, 156, 212, 0.3) 75%,
       rgba(104, 35, 190, 0.3) 100%
-    ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  }
-
-  #logo {
-    padding-top: 2em;
-    padding-left: 2em;
+    ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ 
   }
 
   #logobutt-wrapper {
@@ -398,3 +413,4 @@ body {
     width: 8em;
   }
 }
+*/
