@@ -183,6 +183,10 @@ h6 {
   line-height: 155%;
 }
 
+#testimonials-content {
+  backdrop-filter: blur(10px);
+}
+
 #testimonials p {
   padding: 0;
   margin: 0;
