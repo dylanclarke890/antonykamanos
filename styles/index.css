@@ -184,7 +184,7 @@ h6 {
 }
 
 #testimonials-content {
-  backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px); /* used to blur the bg only. */
 }
 
 #testimonials p {
