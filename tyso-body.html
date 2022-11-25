@@ -8,51 +8,26 @@
       href="https://fonts.googleapis.com/css?family=Droid+Sans|Fascinate+Inline|Open+Sans+Condensed:300"
       rel="stylesheet" />
     <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-    <link rel="stylesheet" href="styles/frank.css" />
+    <link rel="stylesheet" href="styles/style.css" />
     <link rel="stylesheet" href="styles/body.css" />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   </head>
   <body>
     <div id="top"></div>
-    <div id="banner-wrapper">
-      <header id="banner" role="banner">
-        <div id="logobutt-wrapper">
-          <div id="logobutt">
-            <hgroup id="title">
-              <img id="logo" src="images/logo-web.png" title="DEFAULT LOGO" />
-              <img id="" src="" />
-            </hgroup>
-            <!--MOBILE COLLAPSE BUTTON-->
-            <nav id="menu-nav">
-              <div id="menubutt">
-                <div id="menubutt-inner" class="smaller"></div>
-                <!--MOBILE COLLAPSE BUTTON-->
-              </div>
-            </nav>
-          </div>
-          <!--logobutt-->
-        </div>
-        <!--logobutt-wrapper-->
-        <nav id="menu">
-          <ul id="menu-list">
-            <li class="menuli">
-              <a class="mlink" href="#con1">About</a>
-            </li>
-            <li class="menuli">
-              <a
-                class="mlink"
-                href="mailto:tysoyoga@outlook.com?subject=I am interested in the TYSO MBS program"
-                >Subscribe</a
-              >
-            </li>
-            <li class="menuli">
-              <a class="mlink" href="http://anthonykamanos.com/" target="_blank">Home</a>
-            </li>
-          </ul>
-        </nav>
-      </header>
-    </div>
-    <!--banner-wrapper div-->
+    <navbar id="navbar">
+      <picture><img id="logo" src="images/logo-web.png" title="DEFAULT LOGO" /></picture>
+      <ul>
+        <li><a class="scroll-link" href="#about">About</a></li>
+        <li>
+          <a href="mailto:tysoyoga@outlook.com?subject=I am interested in the TYSO MBS program"
+            >Subscribe</a
+          >
+        </li>
+        <li>
+          <a href="http://anthonykamanos.com/" target="_blank">Home</a>
+        </li>
+      </ul>
+      <div></div>
+    </navbar>
     <div class="content" role="main">
       <div class="wrapper">
         <div class="conhead">
@@ -105,6 +80,7 @@
     <footer>
       <small><img id="sclogo" src="images/so-cherry-logo.png" /> 2017 So Cherry Web Design</small>
     </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="scripts/utils.js"></script>
     <script src="scripts/body.js"></script>
     <script
