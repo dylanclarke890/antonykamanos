@@ -71,6 +71,8 @@ body {
   color: rgba(30, 144, 255, 1);
 }
 
+/* END NAVBAR */
+
 /* CONTENT */
 
 .header {
@@ -117,9 +119,25 @@ body {
   padding-bottom: 0;
 }
 
+.scroll-top {
+  text-align: center;
+}
+
 /* END CONTENT */
 
-/* END NAVBAR */
+/* FOOTER */
+
+footer {
+  display: flex;
+  justify-content: center;
+}
+
+#sclogo {
+  vertical-align: middle;
+  width: 8em;
+}
+
+/* END FOOTER */
 
 /*
 .btt {
