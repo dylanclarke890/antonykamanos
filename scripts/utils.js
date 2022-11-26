@@ -27,3 +27,27 @@ function isWithinAnySection(sections, yPos) {
   }
   return false;
 }
+
+function addScrollLinkEvents(scrollLinks) {
+  for (let link of scrollLinks)
+    link.addEventListener("click", (e) => {
+      e.preventDefault();
+      const { href } = link;
+      scrollToElement(href.substring(href.lastIndexOf("#") + 1));
+    });
+}
+
+function addScrollTopEvents(scrollTopActions) {
+  for (let action of scrollTopActions)
+    action.addEventListener("click", (e) => {
+      e.preventDefault();
+      scrollTo(0);
+    });
+}
+
+function updateCurrentYear(elements) {
+  const currentYear = new Date().getFullYear();
+  for (let element of elements) {
+    element.innerHTML = currentYear;
+  }
+}

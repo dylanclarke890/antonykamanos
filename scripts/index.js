@@ -2,19 +2,13 @@ document.addEventListener("DOMContentLoaded", addEvents);
 
 function addEvents() {
   const scrollLinks = document.getElementsByClassName("scroll-link");
-  for (let link of scrollLinks)
-    link.addEventListener("click", (e) => {
-      e.preventDefault();
-      const { href } = link;
-      scrollToElement(href.substring(href.lastIndexOf("#") + 1));
-    });
+  addScrollLinkEvents(scrollLinks);
 
   const scrollTopActions = document.getElementsByClassName("scroll-top");
-  for (let action of scrollTopActions)
-    action.addEventListener("click", (e) => {
-      e.preventDefault();
-      scrollTo(0);
-    });
+  addScrollTopEvents(scrollTopActions);
+
+  const elementsToUpdate = document.getElementsByClassName("current-year");
+  updateCurrentYear(elementsToUpdate);
 
   const nav = document.getElementById("navbar");
   const bgSolid = "bg-solid",

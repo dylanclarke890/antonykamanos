@@ -128,17 +128,3 @@ body {
 }
 
 /* END CONTENT */
-
-/* FOOTER */
-
-footer {
-  display: flex;
-  justify-content: center;
-}
-
-#sclogo {
-  vertical-align: middle;
-  width: 8em;
-}
-
-/* END FOOTER */
