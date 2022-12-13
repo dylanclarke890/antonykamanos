@@ -128,3 +128,67 @@ body {
 }
 
 /* #endregion CONTENT */
+
+/* #region MENU-BUTTON */
+
+#menu-btn {
+  padding: 0.4em;
+  margin: 0.5em 1em;
+  cursor: pointer;
+  -moz-transition: all 0.4s linear;
+  -webkit-transition: all 0.4s linear;
+  -ms-transition: all 0.4s linear;
+  -o-transition: all 0.4s linear;
+  transition: all 0.4s linear;
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  -ms-border-radius: 2px;
+  -o-border-radius: 2px;
+  border-radius: 50%;
+  -moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+  -ms-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+  -o-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+  background-color: green;
+  background-image: -moz-linear-gradient(top, rgba(100, 152, 190, 0.5), rgba(30, 82, 120, 0.5));
+  background-image: -webkit-linear-gradient(top, rgba(100, 152, 190, 0.5), rgba(30, 82, 120, 0.5));
+  background-image: linear-gradient(top, rgba(100, 152, 190, 0.5), rgba(30, 82, 120, 0.5));
+  background-image: -ms-linear-gradient(top, rgba(100, 152, 190, 0.5), rgba(30, 82, 120, 0.5));
+  background-image: -o-linear-gradient(top, rgba(100, 152, 190, 0.5), rgba(30, 82, 120, 0.5));
+  background-position: left bottom;
+  background-repeat: repeat-x;
+}
+
+#menu-btn.selected,
+#menu-btn:active {
+  -moz-box-shadow: 0 1px 1px rgba(120, 120, 120, 0.2);
+  -webkit-box-shadow: 0 1px 1px rgba(120, 120, 120, 0.2);
+  -ms-box-shadow: 0 1px 1px rgba(120, 120, 120, 0.2);
+  -o-box-shadow: 0 1px 1px rgba(120, 120, 120, 0.2);
+  box-shadow: 0 1px 1px rgba(120, 120, 120, 0.2);
+  background-color: green;
+  background-image: -moz-linear-gradient(bottom, rgba(100, 152, 190, 0.5), rgba(30, 82, 120, 0.5));
+  background-image: -webkit-linear-gradient(
+    bottom,
+    rgba(100, 152, 190, 0.5),
+    rgba(30, 82, 120, 0.5)
+  );
+  background-image: linear-gradient(bottom, rgba(100, 152, 190, 0.5), rgba(30, 82, 120, 0.5));
+  background-image: -ms-linear-gradient(bottom, rgba(100, 152, 190, 0.5), rgba(30, 82, 120, 0.5));
+  background-image: -o-linear-gradient(bottom, rgba(100, 152, 190, 0.5), rgba(30, 82, 120, 0.5));
+}
+
+#menu-btn-icon {
+  background: transparent url(../images/menu-bg-zen.png) no-repeat 0 0;
+  background-size: cover !important;
+  width: 63px;
+  height: 50px;
+}
+
+#menu-btn-icon.larger {
+  width: 80px;
+  height: 64px;
+}
+
+/* #endregion MENU-BUTTON */
