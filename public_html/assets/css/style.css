@@ -27,7 +27,7 @@ h6 {
   place-items: center;
 }
 
-/* FOOTER */
+/* #region FOOTER */
 
 footer {
   display: flex;
@@ -39,4 +39,4 @@ footer {
   width: 8em;
 }
 
-/* END FOOTER */
+/* #endregion FOOTER */

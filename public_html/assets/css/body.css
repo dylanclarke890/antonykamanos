@@ -19,7 +19,7 @@ body {
 
 /* #endregion GENERAL */
 
-/* NAVBAR */
+/* #region NAVBAR */
 
 #logo {
   vertical-align: middle;
@@ -75,9 +75,9 @@ body {
   color: rgba(30, 144, 255, 1);
 }
 
-/* END NAVBAR */
+/* #endregion NAVBAR */
 
-/* CONTENT */
+/* #region CONTENT */
 
 .header {
   font-family: var(--font-main);
@@ -127,4 +127,4 @@ body {
   text-align: center;
 }
 
-/* END CONTENT */
+/* #endregion CONTENT */

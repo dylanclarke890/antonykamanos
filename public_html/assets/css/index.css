@@ -1,4 +1,4 @@
-/* GENERAL */
+/* #region GENERAL */
 
 .bg-solid {
   background-color: rgba(255, 255, 255, 0.8);
@@ -15,9 +15,9 @@
   background-size: cover;
 }
 
-/* END GENERAL */
+/* #endregion GENERAL */
 
-/* NAVBAR */
+/* #region NAVBAR */
 
 #navbar {
   position: fixed;
@@ -55,11 +55,11 @@
   transform-origin: bottom center;
 }
 
-/* END NAVBAR */
+/* #endregion NAVBAR */
 
-/* SECTIONS */
+/* #region SECTIONS */
 
-/* INTRO */
+/* #region INTRO */
 
 #intro {
   background-image: url(../images/intro-bg.png);
@@ -69,9 +69,9 @@
   width: 100%;
 }
 
-/* END INTRO */
+/* #endregion INTRO */
 
-/* ABOUT */
+/* #region ABOUT */
 
 #about {
   padding-top: 5em;
@@ -104,9 +104,9 @@
   align-items: center;
 }
 
-/* END ABOUT */
+/* #endregion ABOUT */
 
-/* GOOD EATS */
+/* #region GOOD EATS */
 
 #goodeats {
   background-image: url(../images/goodeats-bg.jpg);
@@ -138,9 +138,9 @@
   height: 510px;
 }
 
-/* END GOOD EATS */
+/* #endregion GOOD EATS */
 
-/* SOCIAL */
+/* #region SOCIAL */
 
 #social {
   display: grid;
@@ -148,9 +148,9 @@
   background-image: url(../images/social-bg.jpg);
 }
 
-/* END SOCIAL */
+/* #endregion SOCIAL */
 
-/* TESTIMONIALS */
+/* #region TESTIMONIALS */
 
 #testimonials {
   background-image: url(../images/testimonials-bg.jpg);
@@ -182,6 +182,6 @@
   top: 5px;
 }
 
-/* END TESTIMONIALS */
+/* #endregion TESTIMONIALS */
 
-/* END SECTIONS */
+/* #endregion SECTIONS */
