@@ -210,15 +210,73 @@
   }
 
   #mobile-navbar {
-    display: flex;
-    justify-content: center;
+    display: block;
   }
 
-  .menu-btn {
+  #menu-btn {
     width: 50px;
     height: 50px;
     background-color: black;
+    border-radius: 50%;
     cursor: pointer;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: all 0.3s ease-in-out;
+    display: grid;
+    place-items: center;
+  }
+
+  #menu-btn-icon {
+    background: url(../images/menu-bg-zen.png) no-repeat center;
+    background-size: contain;
+    width: 40px;
+    height: 40px;
+  }
+
+  #menu-btn.selected {
+    transform: rotate(-0.5turn);
+  }
+
+  #menu-list {
+    display: none;
+    justify-content: center;
+    position: absolute;
+    top: 8.2rem;
+    text-align: center;
+    isolation: isolate;
+    z-index: 1;
+    width: 100%;
+  }
+
+  #menu-list ul {
+    list-style: none;
+  }
+
+  #menu-list ul li {
+    margin: 0.5rem;
+  }
+
+  #menu-list ul li a {
+    font-family: "Barrio", cursive;
+    letter-spacing: 2px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    margin: 1rem 0;
+    text-shadow: #333 1.7px 1.7px 1.7px;
+    text-decoration: none;
+    color: white;
+  }
+
+  #menu-list ul li a:hover {
+    background-color: transparent;
+    color: green;
+    font-size: 40px;
+  }
+
+  #menu-list ul li a:active {
+    color: purple;
   }
 
   img,
@@ -241,8 +299,16 @@
   #intro {
     padding: 0;
     background-image: none;
+    position: relative;
   }
-  #intro .gap:first-of-type {display: none;}
+
+  #intro .gap:first-of-type {
+    display: none;
+  }
+
+  #intro img {
+    height: 200%;
+  }
 
   #about {
     display: block;
@@ -251,6 +317,10 @@
 
   #about img {
     margin-bottom: 1rem;
+  }
+
+  #three-areas {
+    margin-top: 1rem;
   }
 
   #goodeats-foodcharts {

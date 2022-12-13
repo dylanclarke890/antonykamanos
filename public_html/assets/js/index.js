@@ -1,15 +1,11 @@
 document.addEventListener("DOMContentLoaded", addEvents);
 
 function addEvents() {
+  addScrollTopEvents(document.getElementsByClassName("scroll-top"));
+  updateCurrentYear(document.getElementsByClassName("current-year"));
+
   const scrollLinks = document.getElementsByClassName("scroll-link");
   addScrollLinkEvents(scrollLinks);
-
-  const scrollTopActions = document.getElementsByClassName("scroll-top");
-  addScrollTopEvents(scrollTopActions);
-
-  const elementsToUpdate = document.getElementsByClassName("current-year");
-  updateCurrentYear(elementsToUpdate);
-
   const nav = document.getElementById("navbar");
   const bgSolid = "bg-solid",
     active = "active";
@@ -22,7 +18,7 @@ function addEvents() {
   const testimonials = document.getElementById("testimonials");
   const sectionsNeedingSolidNavBg = [intro, about, goodeats, social, testimonials]; // Change as needed.
 
-  function handleScroll() {
+  window.addEventListener("scroll", () => {
     // window.scrollY returns top of page, offset by navbar height as we only
     // want to add the class when the bottom of it clips into the next section.
     const y = window.scrollY + nav.clientHeight;
@@ -43,8 +39,26 @@ function addEvents() {
         break;
       }
     }
-  }
-  window.addEventListener("scroll", handleScroll);
+  });
 
-  handleScroll(); // sets the active tab / apply navbar bg if neccessary.
+  window.dispatchEvent(new Event("scroll")); // sets the active tab / apply navbar bg if neccessary.
+
+  // mobile
+  const menuBtn = document.getElementById("menu-btn");
+  const menuList = document.getElementById("menu-list");
+  let menuOpen = false;
+  menuBtn.addEventListener("click", () => {
+    menuBtn.classList.toggle("selected");
+    if (menuOpen) {
+      menuList.style.removeProperty("display");
+    } else {
+      menuList.style.display = "flex";
+    }
+    menuOpen = !menuOpen;
+  });
+
+  const mobileLinks = document.querySelectorAll("#menu-list a");
+  mobileLinks.forEach((link) =>
+    link.addEventListener("click", () => menuBtn.dispatchEvent(new Event("click")))
+  );
 }
