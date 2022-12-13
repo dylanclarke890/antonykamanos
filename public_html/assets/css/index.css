@@ -193,6 +193,10 @@
 /* #region MOBILE */
 
 @media (max-width: 600px) {
+  .no-pad-mobile {
+    padding: 0 !important;
+  }
+
   #navbar {
     display: none;
   }
@@ -211,6 +215,48 @@
   img,
   video {
     max-width: 100%;
+  }
+
+  .section {
+    background-repeat: no-repeat;
+    background-position: bottom left;
+    background-size: cover;
+    padding: 0.5rem;
+  }
+
+  #about {
+    display: block;
+    padding-top: 1em;
+  }
+
+  #about img {
+    margin-bottom: 1rem;
+  }
+
+  #goodeats-foodcharts {
+    display: block;
+  }
+
+  #goodeats-foodcharts picture {
+    margin: 1rem 0;
+  }
+
+  .gap {
+    height: 1em;
+  }
+
+  #testimonials-content {
+    padding: 0.5rem;
+    font-size: 18px;
+    /* line-height: ; */
+  }
+
+  #testimonials-content br {
+    display: none;
+  }
+
+  #testimonials-content br:first-of-type {
+    display: initial;
   }
 }
 
