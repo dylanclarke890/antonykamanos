@@ -14,4 +14,23 @@ function addEvents() {
 
   const elementsToUpdate = document.getElementsByClassName("current-year");
   updateCurrentYear(elementsToUpdate);
+
+  // mobile
+  const menuBtn = document.getElementById("menu-btn");
+  const menuList = document.getElementById("menu-list");
+  let menuOpen = false;
+  menuBtn.addEventListener("click", () => {
+    menuBtn.classList.toggle("selected");
+    if (menuOpen) {
+      menuList.style.removeProperty("display");
+    } else {
+      menuList.style.display = "block";
+    }
+    menuOpen = !menuOpen;
+  });
+
+  const mobileLinks = document.querySelectorAll("#menu-list a");
+  mobileLinks.forEach((link) =>
+    link.addEventListener("click", () => menuBtn.dispatchEvent(new Event("click")))
+  );
 }
