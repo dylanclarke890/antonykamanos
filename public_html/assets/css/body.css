@@ -1,4 +1,4 @@
-/* GENERAL */
+/* #region GENERAL */
 
 :root {
   --font-main: "Open Sans Condensed", sans-serif;
@@ -17,7 +17,7 @@ body {
   );
 }
 
-/* END GENERAL */
+/* #endregion GENERAL */
 
 /* NAVBAR */
 
