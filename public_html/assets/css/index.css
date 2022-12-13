@@ -182,6 +182,14 @@
 /* #region WEB */
 /* #endregion WEB */
 @media (min-width: 600px) {
+  #navbar {
+    display: block;
+  }
+
+  #mobile-navbar {
+    display: none;
+  }
+
   .section {
     height: 100vh;
     background-repeat: no-repeat;
@@ -202,7 +210,8 @@
   }
 
   #mobile-navbar {
-    display: block;
+    display: flex;
+    justify-content: center;
   }
 
   .menu-btn {
@@ -223,6 +232,17 @@
     background-size: cover;
     padding: 0.5rem;
   }
+
+  .section:not(.section:first-of-type) {
+    position: relative;
+    bottom: 0.3rem;
+  }
+
+  #intro {
+    padding: 0;
+    background-image: none;
+  }
+  #intro .gap:first-of-type {display: none;}
 
   #about {
     display: block;
